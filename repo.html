@@ -1,0 +1,16 @@
+<div>
+  <p>Open issues: {{openIssues}}</p>
+  
+  <table>
+  <tbody>
+    <tr ng-repeat="contributor in contributors">
+      <td>{{contributor.login}}</td>
+      <td><img id="gravatar" ng-src="{{contributor.avatar_url}}" title="{{contributor.login}}"/> </td>
+    </tr>
+  </tbody>
+</table>
+
+<a href="#/main">Back to search</a>
+<a href="#/user/{{username}}">Back to user</a>
+</div>
+
